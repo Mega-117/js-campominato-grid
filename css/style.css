@@ -53,6 +53,9 @@ main{
     border: 1px solid;
     height: 25%;
     width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
@@ -60,4 +63,10 @@ footer{
     display: flex;
     align-items: center;
     padding: 10px 20px;
+}
+
+.bg-click{
+    background-color: red;
+    color: white;
+    border-color: black;
 }
