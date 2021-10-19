@@ -47,7 +47,6 @@ main{
     width: 500px;
     height: 500px;
     margin: auto;
-    gap: 1px;
 }
 
 .cell{

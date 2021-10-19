@@ -43,17 +43,19 @@ function gridGenerator(numCell) {
 
     gridContainer.innerHTML = "";
 
-    const cellPerRiga = Math.sqrt("numCell");
+    const cellPerRiga = Math.sqrt(numCell);
+    console.log(cellPerRiga);
     const cellSize = 100 / cellPerRiga;
+    console.log(cellSize + "%");
 
     //creo cilclo per generare le celle
 
     for (i = 0; i < numCell; i++) {
         let cell = document.createElement("div");
         cell.classList.add("cell");
-        console.log(cell);
         cell.style.width = cellSize + "%";
         cell.style.height = cellSize + "%";
+        console.log(cell.style.width);
         gridContainer.append(cell);
     }
 }
