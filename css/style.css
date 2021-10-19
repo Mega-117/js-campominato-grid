@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    padding: 10px 0;
+    width: 1000px;
+    margin: auto;
+}
+
+main{
+    background-color: #7fffd4;
+}
+
+.section-left{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    padding-left: 10px;
+    line-height: 50px;
+}
+
+#btn-start-game{
+    padding: 1px 35px;
+}
+
+#game-level{
+    padding: 1px 40px 1px 0;
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
