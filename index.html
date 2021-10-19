@@ -11,35 +11,43 @@
 
 <body>
     <header>
-        <div class="container">
 
-            <section class="section-left">
-                <img src="img/Logo.png" alt="logo">
-                <h1>Campo Minato: la Griglia</h1>
-            </section>
-            <section class="section-right">
-                <label for="Game Level">Difficoltà:</label>
 
-                <select name="level" id="game-level">
-                    <option value="1">Easy</option>
-                    <option value="2">Normal</option>
-                    <option value="3">Hard</option>
-                </select>
-                <button id="btn-start-game">Play</button>
-            </section>
-        </div>
+        <section class="section-left">
+            <img src="img/Logo.png" alt="logo">
+            <h1>Campo Minato: la Griglia</h1>
+        </section>
+        <section class="section-right">
+            <label for="Game Level">Difficoltà:</label>
+
+            <select name="level" id="game-level">
+                <option value="1">Easy</option>
+                <option value="2">Normal</option>
+                <option value="3">Hard</option>
+            </select>
+            <button id="btn-start-game">Play</button>
+        </section>
+
     </header>
     <main>
 
         <div class="container">
-            ciao
+            <div class="grid-container">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="container">
-            <span>Made with &#10084; by <a href="#">Boolean</a></span>
 
-        </div>
+        <span>Made with &#10084; by <a href="#">Boolean</a></span>
+
+
     </footer>
     <script src="js/script.js"></script>
 </body>
