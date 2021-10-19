@@ -51,8 +51,9 @@ function gridGenerator(numCell) {
     for (i = 0; i < numCell; i++) {
         let cell = document.createElement("div");
         cell.classList.add("cell");
-        /*cell.style.width = cellSize + "%";
-        cell.style.height = cellSize + "%"; */
-        gridContainer.innerHTML += cell;
+        console.log(cell);
+        cell.style.width = cellSize + "%";
+        cell.style.height = cellSize + "%";
+        gridContainer.append(cell);
     }
 }
