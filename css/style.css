@@ -13,7 +13,7 @@ header{
 }
 
 .container{
-    padding: 10px 0;
+    padding: 50px 0;
     width: 1000px;
     margin: auto;
 }
@@ -46,12 +46,14 @@ main{
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
+    margin: auto;
+    gap: 1px;
 }
 
 .cell{
     border: 1px solid;
-    height: 20px;
-    width: 20px;
+    height: 25%;
+    width: 25%;
 }
 
 footer{

@@ -14,6 +14,8 @@ btnStartGame.addEventListener("click", function () {
     let numeroCelle = cellNumberGeneretor(levelGame);
     console.log("numero celle " + numeroCelle);
 
+    gridGenerator(numeroCelle);
+
 });
 
 
@@ -37,11 +39,20 @@ function cellNumberGeneretor(level) {
 };
 
 //creo funzione per creare le celle
+function gridGenerator(numCell) {
 
+    gridContainer.innerHTML = "";
 
-//creo cilclo per generare le celle
+    const cellPerRiga = Math.sqrt("numCell");
+    const cellSize = 100 / cellPerRiga;
 
-for (i = 0; i < numeroCelle; i++) {
-    let cell = document.createElement("div");
-    cell.classList.add("cell");
+    //creo cilclo per generare le celle
+
+    for (i = 0; i < numCell; i++) {
+        let cell = document.createElement("div");
+        cell.classList.add("cell");
+        /*cell.style.width = cellSize + "%";
+        cell.style.height = cellSize + "%"; */
+        gridContainer.innerHTML += cell;
+    }
 }
